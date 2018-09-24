@@ -1,0 +1,7 @@
+{
+  "name": "dndsort2do",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
