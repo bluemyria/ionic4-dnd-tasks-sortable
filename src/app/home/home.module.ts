@@ -6,7 +6,7 @@ import { RouterModule } from '@angular/router';
 
 import { HomePage } from './home.page';;
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+//import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { SkyhookDndModule, DRAG_DROP_BACKEND } from '@angular-skyhook/core';
 import { SkyhookMultiBackendModule } from "@angular-skyhook/multi-backend";

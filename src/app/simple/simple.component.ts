@@ -18,11 +18,11 @@ export class SimpleComponent {
 
     // you need data types that have a unique value, like SimpleData.id
     list: SimpleData[] = [
-        { id: 1, name: 'Maria' },
-        { id: 2, name: 'Alex' },
-        { id: 3, name: 'Adri' },
-        { id: 4, name: 'Melina' },
-        { id: 5, name: 'Markus' },
+        { id: 1, name: 'Name 1' },
+        { id: 2, name: 'Name 2' },
+        { id: 3, name: 'Name 3' },
+        { id: 4, name: 'Name 4' },
+        { id: 5, name: 'Name 5' }
     ];
 
     // for holding modifications while dragging
