@@ -5,6 +5,7 @@ import { SortableSpec, DraggedItem } from "@angular-skyhook/sortable";
 interface SimpleData {
     id: number;
     name: string;
+    height: number;
 }
 
 @Component({
@@ -18,11 +19,12 @@ export class SimpleComponent {
 
     // you need data types that have a unique value, like SimpleData.id
     list: SimpleData[] = [
-        { id: 1, name: 'Name 1' },
-        { id: 2, name: 'Name 2' },
-        { id: 3, name: 'Name 3' },
-        { id: 4, name: 'Name 4' },
-        { id: 5, name: 'Name 5' }
+        { id: 1, name: 'Name 1', height: 1 },
+        { id: 2, name: 'Name 2', height: 2 },
+        { id: 3, name: 'Name 3', height: 1 },
+        { id: 4, name: 'Name 4', height: 4 },
+        { id: 5, name: 'Name 5', height: 8 },
+        { id: 6, name: 'Name 6', height: 3 }
     ];
 
     // for holding modifications while dragging

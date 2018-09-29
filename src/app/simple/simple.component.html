@@ -2,7 +2,7 @@
     <ng-template let-type let-item="item">
         <ng-container [ngSwitch]="type">
             <div class="priority" *ngSwitchCase="'PRIORITY'" [ngStyle]="item.size.style()">
-                <pre>{{item.index+1}}. {{ item.data.name }}</pre>
+                <pre [ngClass]="'size' + item.data.height">{{item.index+1}}. {{ item.data.name }}</pre>
             </div>
         </ng-container>
     </ng-template>
@@ -17,7 +17,7 @@
             <div class="priority" [ssRender]="context" #render="ssRender" [class.priority--placeholder]="render.isDragging$|async" [dragSource]="render.source"
                 [noHTML5Preview]="true">
                 <!-- <<< attached here! -->
-                <pre>{{render.index+1}}. {{ render.data.name }}</pre>
+                <pre [ngClass]="'size' + render.data.height">{{render.index+1}}. {{ render.data.name }}</pre>
             </div>
         </ng-template>
     </skyhook-sortable-list>
